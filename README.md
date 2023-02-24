@@ -1,3 +1,7 @@
+<p align="center">
+<img src="./images/1_Xz0UKJ3zec1S4k11lO3EjQ.jpeg" width=800>
+</p>
+
 This code is a series of SQL queries that analyze the Chicago Taxi Trips dataset, available in Google Cloud Platform's BigQuery public dataset. The queries extract different statistics, such as the number of trips per year, the average trip distance and speed, the total revenue and profit of taxi companies, and the average trip cost, tips, and duration per weekday and hour. The code also creates a temporary table to save the result of one of the queries and uses it to calculate the average number of taxi trips per quartile. Finally, the code trains a linear regression model to predict the total cost of a taxi trip based on other features such as the tip, duration, weekday, and hour.
 
 The code uses common SQL constructs such as CTEs, window functions, table aliases, and joins. It also uses some BigQuery-specific features, such as the ORDINAL function to retrieve the position of an array element, and the ML.EVALUATE function to evaluate a machine learning model. The queries apply several filtering conditions to exclude rows with null values or invalid data, such as negative distances, fares, or trip durations.
