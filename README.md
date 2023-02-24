@@ -1,16 +1,6 @@
-This code is a series of SQL queries that retrieve and analyze data on Chicago taxi trips from the BigQuery public dataset.
+This code is a series of SQL queries that analyze the Chicago Taxi Trips dataset, available in Google Cloud Platform's BigQuery public dataset. The queries extract different statistics, such as the number of trips per year, the average trip distance and speed, the total revenue and profit of taxi companies, and the average trip cost, tips, and duration per weekday and hour. The code also creates a temporary table to save the result of one of the queries and uses it to calculate the average number of taxi trips per quartile. Finally, the code trains a linear regression model to predict the total cost of a taxi trip based on other features such as the tip, duration, weekday, and hour.
 
-The first query calculates the average trip miles per hour for each hour of the day, which can provide insight into the busiest times for taxi trips.
-
-The second query calculates the average trip cost, tips, and duration for each hour of the day and each day of the week, which can provide more detailed information on when and how much people are spending on taxi trips.
-
-The third query selects training data for a machine learning model that will predict trip cost based on various features such as trip duration, day of the week, and time of day.
-
-The fourth query creates the machine learning model, specifying that it is a linear regression model and the target variable is trip total cost.
-
-The fifth query uses the created model to predict trip total cost based on the same features as the training data, limited to a sample of 25,000 rows.
-
-Overall, this code demonstrates the use of BigQuery and SQL to explore and analyze data, as well as to build and train a machine learning regression model.
+The code uses common SQL constructs such as CTEs, window functions, table aliases, and joins. It also uses some BigQuery-specific features, such as the ORDINAL function to retrieve the position of an array element, and the ML.EVALUATE function to evaluate a machine learning model. The queries apply several filtering conditions to exclude rows with null values or invalid data, such as negative distances, fares, or trip durations.
 
 **Can this BigQuery Linear Regression Model Predict Chicago Taxi Trip Costs?**
 
